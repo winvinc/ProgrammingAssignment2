@@ -40,7 +40,7 @@ cacheSolve <- function(x, ...) {
     return(inverseMetrix)
   }
   ValueMetrix <- x$get()
-  inverseMetrix <- solve(ValueMetrix)
+  inverseMetrix <- solve(ValueMetrix) ##solve(A) = Inverse of A where A is a square matrix.
   x$setinverse(inverseMetrix)
   inverseMetrix
 }
